@@ -117,7 +117,7 @@ namespace assm2
             }
 
             //Check the water level of last month must be less than or equal to the water level of this month
-            if (LMW >= TMW)
+            if (LMW > TMW)
             {
                 MessageBox.Show("Error: Current water meter reading must be greater than or equal to the previous reading. Please enter again.");
                 return;
@@ -275,7 +275,7 @@ namespace assm2
                     }
                 }
                 //Check the water level of last month must be less than or equal to the water level of this month
-                if (LMW >= TMW)
+                if (LMW > TMW)
                 {
                     MessageBox.Show("Error: Current water meter reading must be greater than or equal to the previous reading. Please enter again.");
                     return;
